@@ -1,0 +1,152 @@
+/* Dashboard.css */
+
+/* Reset some default browser styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  /* Main container styling */
+  .dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  .dashboard-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+  }
+  
+  /* Session container card styling */
+  .session-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .session-container:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Session button styling */
+  .session-button {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #2c3e50;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+  }
+  
+  .session-button:hover {
+    background-color: #34495e;
+  }
+  
+  /* Conferences container styling */
+  .conferences-container {
+    padding: 20px;
+    background-color: #fafafa;
+    overflow-x: auto;
+  }
+  
+  /* Table styling within the conferences container */
+  .conferences-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .conferences-container th,
+  .conferences-container td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 0.95rem;
+  }
+  
+  .conferences-container th {
+    background-color: #f1f1f1;
+    color: #2c3e50;
+    font-weight: bold;
+  }
+  
+  .conferences-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .conferences-container tr:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Button styles for actions within table rows */
+  .conferences-container button {
+    padding: 8px 12px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+  }
+  
+  .conferences-container button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Styling for non-button actions (such as pending status) */
+  .conferences-container span {
+    padding: 8px 12px;
+    background-color: #f39c12;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      padding: 10px;
+    }
+    
+    .dashboard-container h1 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    
+    .session-button {
+      padding: 12px 15px;
+      font-size: 1rem;
+    }
+    
+    .conferences-container th,
+    .conferences-container td {
+      padding: 8px;
+      font-size: 0.85rem;
+    }
+    
+    .conferences-container button,
+    .conferences-container span {
+      padding: 6px 10px;
+      font-size: 0.8rem;
+    }
+  }
+  

@@ -1,0 +1,89 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.profile-container h1 {
+    margin-bottom: 20px;
+}
+
+.profile-container p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+/* ProfilePage.css */
+
+/* Define some CSS variables for consistency */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --background-color: #f4f6f8;
+    --text-color: #333;
+  }
+  
+  /* Global reset and base styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Main profile container styling */
+  .profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styling */
+  .profile-container h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Paragraph styling */
+  .profile-container p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  /* Emphasize labels */
+  .profile-container p strong {
+    color: var(--primary-color);
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .profile-container {
+      margin: 30px 20px;
+      padding: 20px;
+    }
+  
+    .profile-container h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  
+    .profile-container p {
+      font-size: 0.95rem;
+    }
+  }
+  

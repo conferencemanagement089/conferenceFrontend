@@ -1,0 +1,54 @@
+.organize-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.organize-container h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.organize-container button {
+    padding: 10px 15px;
+    margin: 20px 0;
+    font-size: 1em;
+    color: #fff;
+    background-color: #a36627;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.organize-container button:hover {
+    background-color: #eaa056;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.chat-message {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-message strong {
+    color: #a36627;
+}
+
+.chat-message:last-child {
+    border-bottom: none;
+}
