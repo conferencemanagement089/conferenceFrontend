@@ -17,7 +17,7 @@ const RegisterPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://https://conferencebackend.onrender.com/api/auth/register', {
+            await axios.post('https://conferencebackend.onrender.com/api/auth/register', {
                 username,
                 email,
                 password,

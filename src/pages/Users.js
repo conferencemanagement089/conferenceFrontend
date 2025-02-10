@@ -9,7 +9,7 @@ const Users = () => {
 
     const fetchUsers = useCallback(async () => {
         try {
-            const res = await axios.get('http://https://conferencebackend.onrender.com/api/users', {
+            const res = await axios.get('https://conferencebackend.onrender.com/api/users', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -26,7 +26,7 @@ const Users = () => {
 
     const handleDeleteUser = async (id) => {
         try {
-            await axios.delete(`http://https://conferencebackend.onrender.com/api/users/${id}`, {
+            await axios.delete(`https://conferencebackend.onrender.com/api/users/${id}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

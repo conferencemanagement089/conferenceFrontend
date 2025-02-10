@@ -17,7 +17,7 @@ const Organize = () => {
 
     const fetchConference = async () => {
         try {
-            const res = await axios.get(`http://https://conferencebackend.onrender.com/api/conferences/${id}`, {
+            const res = await axios.get(`https://conferencebackend.onrender.com/api/conferences/${id}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -30,7 +30,7 @@ const Organize = () => {
 
     const fetchChats = async () => {
         try {
-            const res = await axios.get(`http://https://conferencebackend.onrender.com/api/conferences/${id}/chats`, {
+            const res = await axios.get(`https://conferencebackend.onrender.com/api/conferences/${id}/chats`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -44,7 +44,7 @@ const Organize = () => {
 
     const toggleChatRoom = async () => {
         try {
-            const res = await axios.patch(`http://https://conferencebackend.onrender.com/api/conferences/${id}/chat`, { enabled: !conference.chatEnabled }, {
+            const res = await axios.patch(`https://conferencebackend.onrender.com/api/conferences/${id}/chat`, { enabled: !conference.chatEnabled }, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

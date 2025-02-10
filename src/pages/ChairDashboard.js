@@ -15,7 +15,7 @@ const ChairDashboard = () => {
 
     const fetchSessions = async () => {
         try {
-            const res = await axios.get('http://https://conferencebackend.onrender.com/api/sessions', {
+            const res = await axios.get('https://conferencebackend.onrender.com/api/sessions', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

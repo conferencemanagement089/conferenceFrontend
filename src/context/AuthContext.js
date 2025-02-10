@@ -39,7 +39,7 @@ const AuthProvider = ({ children }) => {
         const fetchProfile = async () => {
             if (state.token) {
                 try {
-                    const res = await axios.get('http://https://conferencebackend.onrender.com/api/auth/profile', {
+                    const res = await axios.get('https://conferencebackend.onrender.com/api/auth/profile', {
                         headers: {
                             Authorization: `Bearer ${state.token}`
                         }

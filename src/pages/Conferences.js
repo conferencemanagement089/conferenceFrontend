@@ -19,7 +19,7 @@ const Conferences = () => {
 
     const fetchConferences = async () => {
         try {
-            const res = await axios.get('http://https://conferencebackend.onrender.com/api/conferences', {
+            const res = await axios.get('https://conferencebackend.onrender.com/api/conferences', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -33,7 +33,7 @@ const Conferences = () => {
     const handleCreateConference = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://https://conferencebackend.onrender.com/api/conferences', newConference, {
+            await axios.post('https://conferencebackend.onrender.com/api/conferences', newConference, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -46,7 +46,7 @@ const Conferences = () => {
 
     const handleDeleteConference = async (id) => {
         try {
-            await axios.delete(`http://https://conferencebackend.onrender.com/api/conferences/${id}`, {
+            await axios.delete(`https://conferencebackend.onrender.com/api/conferences/${id}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

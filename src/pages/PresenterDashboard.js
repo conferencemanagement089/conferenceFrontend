@@ -15,7 +15,7 @@ const PresenterDashboard = () => {
 
     const fetchSessions = async () => {
         try {
-            const res = await axios.get('http://https://conferencebackend.onrender.com/api/sessions', {
+            const res = await axios.get('https://conferencebackend.onrender.com/api/sessions', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -34,7 +34,7 @@ const PresenterDashboard = () => {
 
     const requestPayment = async (id) => {
         try {
-            await axios.post(`http://https://conferencebackend.onrender.com/api/conferences/${id}/request-payment`, {}, {
+            await axios.post(`https://conferencebackend.onrender.com/api/conferences/${id}/request-payment`, {}, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
