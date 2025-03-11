@@ -12,27 +12,34 @@ const generateTicketPDF = async (conference, presenter) => {
         color: rgb(0, 0, 0),
     });
 
-    page.drawText(`Presenter: ${presenter.username}`, {
-        x: 50,
-        y: 320,
-        size: 20,
-        color: rgb(0, 0, 0),
-    });
-    page.drawText(`Email: ${presenter.email}`, {
+    page.drawText(`Name: ${presenter.username}`, {
+            x: 50,
+            y: 320,
+            size: 20,
+            color: rgb(0, 0, 0),
+        });
+    
+    page.drawText(`Presenter: ${conference.presenterEmail}`, {
         x: 50,
         y: 290,
         size: 20,
         color: rgb(0, 0, 0),
     });
-    page.drawText(`Department: ${presenter.department}`, {
+    page.drawText(`Email: ${presenter.email}`, {
         x: 50,
         y: 260,
         size: 20,
         color: rgb(0, 0, 0),
     });
-    page.drawText(`Phone Number: ${presenter.phoneNo}`, {
+    page.drawText(`Department: ${presenter.department}`, {
         x: 50,
         y: 230,
+        size: 20,
+        color: rgb(0, 0, 0),
+    });
+    page.drawText(`Phone Number: ${presenter.phoneNo}`, {
+        x: 50,
+        y: 210,
         size: 20,
         color: rgb(0, 0, 0),
     });

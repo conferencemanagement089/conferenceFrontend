@@ -93,11 +93,11 @@ const EnterConference = () => {
                         <h1>{conference.title}</h1>
                         <p>{conference.description}</p>
                         <p>Date: {new Date(conference.date).toLocaleDateString()}</p>
-                        {user.role === 'Presenter' && (
+                        {
                             <button onClick={handleDownloadTicket}>Download Ticket</button>
-                        )}
+                        }
                     </div>
-                    {user.role === 'Attendee' && (
+                    {
                         <div className="chat-room">
                             <h2>Chat Room</h2>
                             {conference.chatEnabled ? (
@@ -124,7 +124,7 @@ const EnterConference = () => {
                                 <p>Chat room is not enabled for this session.</p>
                             )}
                         </div>
-                    )}
+                    }
                 </>
             )}
         </div>
